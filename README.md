@@ -48,3 +48,9 @@ switch(convert(a_string))
 ```
 
 Performance-wise the `convert` function does a single pass through the input string, which should make it notably faster than any hashing approach which at least needs to read twice (but I have no benchmarks to prove it).
+
+## Command-line arguments
+
+The script reads from stdin if there's no argument, and from the file named in the first argument if there is one.
+
+There's no command-line arguments to control the name of the enum, the function, or how to generate the enum labels.
