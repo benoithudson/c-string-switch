@@ -54,3 +54,7 @@ Performance-wise the `convert` function does a single pass through the input str
 The script reads from stdin if there's no argument, and from the file named in the first argument if there is one.
 
 There's no command-line arguments to control the name of the enum, the function, or how to generate the enum labels.
+
+## Security
+
+There's precisely no input verification. Don't use this script on untrusted input and then compile and run the output.
